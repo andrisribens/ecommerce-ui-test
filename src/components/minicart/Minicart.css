@@ -1,0 +1,255 @@
+.minicart-backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: #393748;
+  opacity: 22%;
+  z-index: -10;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+
+.minicart {
+  width: 325px;
+  max-height: 80vh;
+  padding: 32px 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 78px;
+  right: 72px;
+  z-index: 100;
+  background-color: white;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /*Internet Explorer 10+ */
+}
+
+.minicart::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.minicart h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  margin-block-start: 0;
+  margin-block-end: 12px;
+  display: inline-block;
+  color: #1d1f22;
+}
+
+.minicart h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  margin-block-start: 0;
+  margin-block-end: 4px;
+  color: #1d1f22;
+}
+
+.minicart h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-block-start: 20px;
+  margin-block-end: 32px;
+}
+
+.minicart h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  margin-block-start: 0;
+  margin-block-end: 8px;
+  color: #1d1f22;
+}
+
+.minicart h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #1d1f22;
+  margin-block-start: 8px;
+  margin-block-end: 0;
+}
+
+.minicart-item {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .minicart-attributes-block {
+  background-color: rgb(227, 201, 132);
+} */
+
+.minicart-size-group {
+  width: 100%;
+  margin: 0;
+}
+
+.minicart-size-group a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  text-transform: uppercase;
+}
+
+.minicart-btn-size {
+  height: 24px;
+  border: solid 1px;
+  margin: 8px 8px 0 0;
+  padding: 0 6px;
+  color: #1d1f22;
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.minicart-btn-size-active {
+  color: white;
+  background-color: #1d1f22;
+}
+
+.minicart-color-group {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.minicart-btn-color {
+  width: 18px;
+  height: 18px;
+  border: solid 1px white;
+  margin: 8px 8px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minicart-btn-color-active {
+  border: solid 1px #5ece7b;
+}
+
+.minicart-btn-color-inside {
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+
+.minicart-btn-white-inside {
+  border: solid 1px rgb(29, 31, 34, 0.15);
+}
+
+.minicart-picture-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.minicart-picture-container {
+  width: 121px;
+  height: 190px;
+  margin-left: 8px;
+  position: relative;
+}
+
+.minicart-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.minicart-amount-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.minicart-amount-group p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1d1f22;
+  text-align: center;
+}
+
+.minicart-amount-button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.minicart-total-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.minicart-total-numbers h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  margin-block-start: 12px;
+}
+
+.minicart-btn-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.minicart-btn-container {
+  width: 100%;
+}
+
+.btn-minicart {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  padding: 13px;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #5ece7b;
+}
+
+.btn-primary {
+  border: none;
+  color: white;
+  background-color: #5ece7b;
+}
+
+.btn-secondary {
+  border: solid 1px #1d1f22;
+  color: #1d1f22;
+  background-color: white;
+  cursor: pointer;
+}
