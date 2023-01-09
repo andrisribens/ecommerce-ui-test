@@ -22,10 +22,10 @@ class CurrencySwitcher extends React.Component {
               <Query query={CURRENCYLIST} fetchPolicy="cache-and-network">
                 {({ data, loading, error }) => {
                   if (loading) {
-                    return <p>Loading currencies...</p>;
+                    return null;
                   }
                   if (error) {
-                    return <h1>Error: {error.message}</h1>;
+                    return <p>{error.message}</p>;
                   }
                   if (data) {
                     return data.currencies.map((currency) => {

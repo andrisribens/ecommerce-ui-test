@@ -27,9 +27,7 @@ class Header extends React.Component {
           <div className="navbar-sector first-sector">
             <Query query={CATEGORYLIST} fetchPolicy="cache-and-network">
               {({ data, loading }) =>
-                loading ? (
-                  <span>Loading categories ...</span>
-                ) : (
+                loading ? null : (
                   <div>
                     {data.categories.map((category) => {
                       return (

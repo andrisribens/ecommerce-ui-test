@@ -77,9 +77,7 @@ class Pdp extends React.Component {
           fetchPolicy="network-only"
         >
           {({ data, loading }) =>
-            loading ? (
-              <span>Product data is loading...</span>
-            ) : (
+            loading ? null : (
               <div className="pdp">
                 <div className="pdp-left-container">
                   {data.product.gallery.map((picture, index) => {

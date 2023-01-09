@@ -60,10 +60,10 @@ class Cart extends React.Component {
               >
                 {({ data, loading, error }) => {
                   if (loading) {
-                    return <span>Cart item data loading here...</span>;
+                    return null;
                   }
                   if (error) {
-                    return <span>Some error here: {error.message}</span>;
+                    return <span>{error.message}</span>;
                   }
                   return (
                     <div

@@ -48,10 +48,10 @@ class Plp extends React.Component {
         >
           {({ data, loading, error }) => {
             if (loading) {
-              return <span>Product list loading...</span>;
+              return null;
             }
             if (error) {
-              return <span>Error: {error.message}</span>;
+              return <span>{error.message}</span>;
             }
             return (
               <div className="plp">
