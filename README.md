@@ -1,4 +1,4 @@
-This is a front-end part of e-commerce site. Created as test assignment. Only desktop version.
+As a test assignment I created front-end part of e-commerce site. Only desktop version.
 I used React JS, HTML, CSS, GraphQL, Apollo, NPM, Git.
 
 - Product description page, product listing page, cart overlay, cart page, currency
