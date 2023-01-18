@@ -44,12 +44,9 @@ class Plp extends React.Component {
           variables={{
             input: { title: `${this.props.params.categoryName}` },
           }}
-          // fetchPolicy="cache-and-network"
+          fetchPolicy="cache-and-network"
         >
           {({ data, loading, error }) => {
-            if (!data) {
-              return <span> NAV DATU </span>;
-            }
             if (loading) {
               return null;
             }
