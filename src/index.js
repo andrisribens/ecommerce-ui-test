@@ -10,7 +10,7 @@ import App from './App.js';
 // });
 
 export const apolloClient = new ApolloClient({
-  uri: 'http://zoozl.net:1603',
+  uri: 'https://zoozl.net:1604',
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
