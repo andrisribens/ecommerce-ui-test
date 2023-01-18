@@ -230,7 +230,7 @@ class Minicart extends React.Component {
                 </div>
               </div>
               <div className="minicart-btn-block">
-                <Link to="/cart" className="minicart-btn-container">
+                <Link to="demoshop/cart" className="minicart-btn-container">
                   <button
                     className="btn-minicart btn-secondary"
                     onClick={this.props.onClick}

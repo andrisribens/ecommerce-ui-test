@@ -31,7 +31,10 @@ class Header extends React.Component {
                   <div>
                     {data.categories.map((category) => {
                       return (
-                        <Link to={category.name} key={category.name}>
+                        <Link
+                          to={'demoshop/' + category.name}
+                          key={category.name}
+                        >
                           <div
                             onClick={this.props.onCategoryClick}
                             title={category.name}

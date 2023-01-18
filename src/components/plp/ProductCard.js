@@ -42,7 +42,7 @@ class ProductCard extends React.Component {
   render() {
     return (
       <Link
-        to={`/${this.props.params.categoryName}/${this.props.productId}`}
+        to={`/demoshop/${this.props.params.categoryName}/${this.props.productId}`}
         key={this.props.productId}
         onMouseEnter={this.showCartIcon}
         onMouseLeave={this.hideCartIcon}

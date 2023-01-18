@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  Link,
 } from 'react-router-dom';
 import Header from './components/header/Header';
 import Alert from './components/alert/Alert';
@@ -303,12 +304,17 @@ class App extends React.Component {
           />
           <Routes>
             <Route
-              path="/"
-              element={<Navigate to={this.state.activeCategory} replace />}
+              path="/demoshop"
+              element={
+                <Navigate
+                  to={'/demoshop/' + this.state.activeCategory}
+                  replace
+                />
+              }
             />
 
             <Route
-              path=":categoryName"
+              path="demoshop/:categoryName"
               element={
                 <Plp
                   activeCurrency={this.state.activeCurrency}
@@ -320,7 +326,7 @@ class App extends React.Component {
               }
             />
             <Route
-              path=":categoryName/:productId"
+              path="demoshop/:categoryName/:productId"
               element={
                 <Pdp
                   activeCurrency={this.state.activeCurrency}
@@ -337,7 +343,7 @@ class App extends React.Component {
               }
             />
             <Route
-              path="cart"
+              path="demoshop/cart"
               element={
                 <Cart
                   activeCurrency={this.state.activeCurrency}
@@ -355,6 +361,7 @@ class App extends React.Component {
               }
             />
             <Route path="/*" element={<NotFound />} />
+            <Route path="/demoshop/*" element={<NotFound />} />
           </Routes>
         </Router>
       </Fragment>
@@ -366,7 +373,10 @@ class NotFound extends React.Component {
   render() {
     return (
       <div>
-        <h1>Nothing is here. Go home!</h1>
+        <h1>
+          Could not find this page. Please go to the{' '}
+          <Link to={'/demoshop'}>start</Link>{' '}
+        </h1>
       </div>
     );
   }
